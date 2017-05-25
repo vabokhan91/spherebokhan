@@ -1,0 +1,36 @@
+2017-05-25 13:05:48.653 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 13:05:48.657 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 13:09:49.330 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 13:09:49.334 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 13:15:51.915 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 13:15:51.921 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 13:17:54.015 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 13:17:54.020 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 13:25:11.040 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 13:25:11.046 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:02:52.921 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:02:52.951 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:03:21.450 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:03:21.455 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:04:08.476 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:04:08.482 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:04:24.516 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:04:24.522 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:08:30.536 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:08:30.540 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:10:59.795 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:10:59.802 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:11:09.208 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:11:09.213 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:13:59.708 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:13:59.714 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:25:12.491 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:25:12.495 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 14:34:15.771 [main] ERROR reader.ReaderFromFile - Incorrect data. Expected double exception.IncorrectDataTypeException: java.lang.NumberFormatException: For input string: "five"
+2017-05-25 14:34:15.774 [main] ERROR reader.ReaderFromFile -  Not enough data java.lang.ArrayIndexOutOfBoundsException: 3
+2017-05-25 15:02:04.810 [main] ERROR reader.ReaderFromFile - Reading error. Incorrect data. Expected double 
+2017-05-25 15:02:04.814 [main] ERROR reader.ReaderFromFile - Reading error. Not enough data 
+2017-05-25 15:04:11.175 [main] ERROR reader.ReaderFromFile - Reading error. Incorrect data. Expected double 
+2017-05-25 15:04:11.179 [main] ERROR reader.ReaderFromFile - Reading error. Not enough data 
+2017-05-25 15:04:24.539 [main] ERROR reader.ReaderFromFile - Reading error. Incorrect data. Expected double 
+2017-05-25 15:04:24.544 [main] ERROR reader.ReaderFromFile - Reading error. Not enough data 
