@@ -6,7 +6,6 @@ import entity.Sphere;
  * Created by vbokh on 25.05.2017.
  */
 public class SphereParametersCalculator {
-    private Sphere sphere;
     private static final double P = Math.PI;
 
     public double calculateSquare(Sphere sphere) {
