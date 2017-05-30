@@ -1,4 +1,4 @@
-package exception;
+package com.bokhan.sphere.exception;
 
 /**
  * Created by vbokh on 25.05.2017.

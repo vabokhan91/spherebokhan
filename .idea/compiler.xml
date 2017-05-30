@@ -9,8 +9,8 @@
         <module name="spherebokhan" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spherebokhan" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="spherebokhan" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
