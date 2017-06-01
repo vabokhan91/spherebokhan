@@ -1,4 +1,4 @@
-package com.bokhan.sphere.util;
+package com.bokhan.sphere.services;
 
 import com.bokhan.sphere.exception.NullFileException;
 import com.bokhan.sphere.reader.ReaderFromFile;

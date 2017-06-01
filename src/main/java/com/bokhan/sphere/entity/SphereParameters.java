@@ -2,7 +2,7 @@ package com.bokhan.sphere.entity;
 
 import com.bokhan.sphere.observer.IObserver;
 import com.bokhan.sphere.observer.SphereEvent;
-import com.bokhan.sphere.util.SphereParametersCalculator;
+import com.bokhan.sphere.services.SphereParametersCalculator;
 import java.util.ArrayList;
 import java.util.List;
 

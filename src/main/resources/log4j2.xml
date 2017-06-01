@@ -4,7 +4,7 @@
         <Console name="Console">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{1} - %m%n" />
         </Console>
-        <RollingFile name="myFile" fileName="logInfo.log" filePattern="logInfo-%i.log">
+        <RollingFile name="myFile" fileName="logs/logInfo.log" filePattern="logInfo-%i.log">
             <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %m%n"/>
             <Policies>
                 <SizeBasedTriggeringPolicy size = "10 KB"/>

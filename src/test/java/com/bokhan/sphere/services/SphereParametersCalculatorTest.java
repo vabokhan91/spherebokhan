@@ -1,4 +1,4 @@
-package com.bokhan.sphere.util;
+package com.bokhan.sphere.services;
 
 import com.bokhan.sphere.entity.Point;
 import com.bokhan.sphere.entity.Sphere;

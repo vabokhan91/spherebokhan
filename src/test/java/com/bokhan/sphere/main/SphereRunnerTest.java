@@ -13,9 +13,9 @@ import com.bokhan.sphere.reader.ReaderFromFile;
 import com.bokhan.sphere.reader.ReaderFromFileTest;
 import com.bokhan.sphere.storage.SphereStorage;
 import com.bokhan.sphere.storage.SphereStorageTest;
-import com.bokhan.sphere.util.SphereParametersCalculatorTest;
-import com.bokhan.sphere.util.SphereValidator;
-import com.bokhan.sphere.util.SphereValidatorTest;
+import com.bokhan.sphere.services.SphereParametersCalculatorTest;
+import com.bokhan.sphere.services.SphereValidator;
+import com.bokhan.sphere.services.SphereValidatorTest;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -38,24 +38,18 @@ public class SphereRunnerTest {
                 SphereValidator validator = new SphereValidator();
                 SphereParser parser = new SphereParser();
                 SphereCreator creator = new SphereCreator();
-                Map<Sphere, SphereParameters> map = null;
                 try {
                         List<String> unvalidatedData = readerFromFile.readDataFromFile(FILENAME);
                         List<String> validatedData = validator.validateData(unvalidatedData);
                         Map<Point, Double> dataForCreatingSpheres = parser.parseListOfData(validatedData);
-                        map = creator.createSpheresAndParameters(dataForCreatingSpheres);
+                        creator.createSpheresAndParameters(dataForCreatingSpheres);
                 } catch (NullFileException e) {
                         e.getMessage();
                 } catch (MissingDataException e) {
                         e.getMessage();
                 }
                 Map<Sphere,SphereParameters> storage = SphereStorage.getInstance().getSphereStorage();
-                Sphere testSphere =(Sphere) map.keySet().toArray()[1];
+                Sphere testSphere =(Sphere) storage.keySet().toArray()[0];
                 testSphere.setRadius(20);
-                Sphere testSphere2 =(Sphere) storage.keySet().toArray()[1];
-                System.out.println(testSphere);
-                System.out.println(testSphere2);
-                System.out.println(storage.containsKey(testSphere));
-
         }
 }
