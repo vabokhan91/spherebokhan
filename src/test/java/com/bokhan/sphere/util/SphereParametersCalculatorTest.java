@@ -7,10 +7,8 @@ import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 /**
@@ -19,10 +17,11 @@ import static org.junit.Assert.*;
 @RunWith(Enclosed.class)
 public class SphereParametersCalculatorTest {
     private static Sphere sphere;
-    private static final String OXY = " is crossed by OXY coordinate plane. Ratio of volumes of spheres : ";
-    private static final String OXZ = " is crossed by OXZ coordinate plane. Ratio of volumes of spheres : ";
-    private static final String OYZ = " is crossed by OYZ coordinate plane. Ratio of volumes of spheres : ";
-    private static final String NOCROSSING = " is not crossed by any coordinate plane";
+    private final static String SPHERE = " Sphere ";
+    private final static String OXY = " is crossed by OXY coordinate plane. Ratio of volumes of sections : ";
+    private final static String OXZ = " is crossed by OXZ coordinate plane. Ratio of volumes of sections : ";
+    private final static String OYZ = " is crossed by OYZ coordinate plane. Ratio of volumes of sections : ";
+    private final static String NOCROSSING = " is not crossed by any coordinate plane";
 
     @RunWith(Parameterized.class)
     public static class ParametrizedPart {
@@ -55,7 +54,6 @@ public class SphereParametersCalculatorTest {
         @BeforeClass
         public static void initSphere() {
             sphere = new Sphere(new Point(7, 7, 7), Double.valueOf(9));
-
         }
 
         @Test
@@ -77,7 +75,7 @@ public class SphereParametersCalculatorTest {
             double ratioWithOXZ = 0.05;
             double ratioWithOXY = 0.05;
             double ratioWithOYZ = 0.05;
-            String expected = sphere + OXY + ratioWithOXY + "\t" + sphere + OXZ + ratioWithOXZ + "\t" + sphere + OYZ + ratioWithOYZ + "\t";
+            String expected = SPHERE + sphere.getId() + OXY + ratioWithOXY + SPHERE + sphere.getId() + OXZ + ratioWithOXZ + SPHERE + sphere.getId() + OYZ + ratioWithOYZ;
             String actual = SphereParametersCalculator.calculateSphereVolumesRatio(sphere);
             assertEquals(expected,actual);
         }
@@ -87,7 +85,7 @@ public class SphereParametersCalculatorTest {
             Sphere sphereOXYOXZCrossing = new Sphere(new Point(8, 5, 6), Double.valueOf(7));
             double ratioOXY = 0.02;
             double ratioOXZ = 0.09;
-            String expected = sphereOXYOXZCrossing + OXY + ratioOXY + "\t" + sphereOXYOXZCrossing + OXZ + ratioOXZ +"\t";
+            String expected = SPHERE + sphereOXYOXZCrossing.getId() + OXY + ratioOXY + SPHERE + sphereOXYOXZCrossing.getId() + OXZ + ratioOXZ;
             String actual = SphereParametersCalculator.calculateSphereVolumesRatio(sphereOXYOXZCrossing);
             assertEquals(expected,actual);
         }
@@ -96,16 +94,15 @@ public class SphereParametersCalculatorTest {
         public void calculateSphereVolumesRatioCrossingWithOYZCoordinatePlaneTest() {
             Sphere sphereOYZ = new Sphere(new Point(3, 7, -5), Double.valueOf(4));
             double ratioOYZ = 0.07;
-            String expected = sphereOYZ + OYZ + ratioOYZ + "\t";
+            String expected = SPHERE + sphereOYZ.getId() + OYZ + ratioOYZ;
             String actual = SphereParametersCalculator.calculateSphereVolumesRatio(sphereOYZ);
             assertEquals(expected, actual);
-
         }
 
         @Test
         public void calculateSphereVolumesRatioNoCrossingTest() {
             Sphere noCrossingSphere = new Sphere(new Point(5, 6, 8), Double.valueOf(3));
-            String expected = noCrossingSphere + NOCROSSING;
+            String expected = SPHERE + noCrossingSphere.getId() + NOCROSSING;
             String actual = SphereParametersCalculator.calculateSphereVolumesRatio(noCrossingSphere);
             assertEquals(expected,actual);
         }

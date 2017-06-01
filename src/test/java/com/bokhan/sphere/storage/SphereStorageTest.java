@@ -1,21 +1,12 @@
 package com.bokhan.sphere.storage;
 
-import com.bokhan.sphere.creator.SphereCreatorTest;
 import com.bokhan.sphere.entity.Point;
 import com.bokhan.sphere.entity.Sphere;
 import com.bokhan.sphere.entity.SphereParameters;
-import com.bokhan.sphere.entity.SphereTest;
-import com.bokhan.sphere.parser.SphereParserTest;
-import com.bokhan.sphere.reader.ReaderFromFileTest;
-import com.bokhan.sphere.util.SphereParametersCalculatorTest;
-import com.bokhan.sphere.util.SphereValidatorTest;
+import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,9 +17,13 @@ import static org.junit.Assert.*;
  */
 public class SphereStorageTest {
     private static Map<Sphere,SphereParameters> mapOfSpheresAndParams;
+    private static Sphere singleSphere;
+    private static SphereParameters singleParameters;
 
     @BeforeClass
     public static void initMap() {
+        singleSphere = new Sphere(new Point(5, 7, 15), 100);
+        singleParameters = new SphereParameters(singleSphere);
         mapOfSpheresAndParams = new HashMap<>();
         Sphere sphere1 = new Sphere(new Point(7, 7, 7), Double.valueOf(9));
         SphereParameters params1 = new SphereParameters(sphere1);
@@ -45,9 +40,22 @@ public class SphereStorageTest {
     }
 
     @Test
-    public void getSphereStorage() {
-        Map<Sphere,SphereParameters> actual = SphereStorage.getInstance().getSphereStorage();
-        assertTrue(mapOfSpheresAndParams.equals(actual));
+    public void updateSphereStorageWithCollection(){
+        SphereStorage.getInstance().updateStorage(mapOfSpheresAndParams);
+        Map<Sphere, SphereParameters> actual = SphereStorage.getInstance().getSphereStorage();
+        assertEquals(mapOfSpheresAndParams,actual);
+    }
+    @Test
+    public void updateSphereStorageWithSinglePair() {
+        SphereStorage.getInstance().updateStorage(singleSphere,singleParameters);
+        Map<Sphere, SphereParameters> actual = SphereStorage.getInstance().getSphereStorage();
+        System.out.println(actual);
+        assertTrue(actual.containsKey(singleSphere));
     }
 
+    @After
+    public void clear() {
+        Map<Sphere,SphereParameters> storage = SphereStorage.getInstance().getSphereStorage();
+        storage.clear();
+    }
 }

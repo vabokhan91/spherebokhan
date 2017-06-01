@@ -1,15 +1,10 @@
 package com.bokhan.sphere.reader;
 
-import com.bokhan.sphere.entity.Point;
-import com.bokhan.sphere.exception.NoFileException;
+import com.bokhan.sphere.exception.NullFileException;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import static org.junit.Assert.*;
 
 /**
@@ -17,7 +12,7 @@ import static org.junit.Assert.*;
  */
 public class ReaderFromFileTest {
     private static List<String > data;
-    private static final String FILENAME = "src/main/resources/data.txt";
+    private final static String FILENAME = "src/main/resources/data.txt";
 
     @BeforeClass
     public static void initList() {
@@ -32,14 +27,14 @@ public class ReaderFromFileTest {
     }
 
     @Test
-    public void readDataFromFile() throws NoFileException{
+    public void readDataFromFile() throws NullFileException {
         List<String> expected = data;
         List<String> actual = new ReaderFromFile().readDataFromFile(FILENAME);
         assertEquals(expected, actual);
     }
 
-    @Test(expected = NoFileException.class)
-    public void readNull() throws NoFileException{
+    @Test(expected = NullFileException.class)
+    public void readNull() throws NullFileException {
         List<String> actual = new ReaderFromFile().readDataFromFile(null);
     }
 

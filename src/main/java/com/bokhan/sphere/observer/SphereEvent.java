@@ -1,7 +1,6 @@
 package com.bokhan.sphere.observer;
 
 import com.bokhan.sphere.entity.Sphere;
-import com.bokhan.sphere.entity.SphereParameters;
 
 import java.util.EventObject;
 

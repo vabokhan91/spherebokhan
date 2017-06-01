@@ -1,22 +1,24 @@
 package com.bokhan.sphere.util;
 
-import com.bokhan.sphere.entity.Point;
-import com.bokhan.sphere.entity.Sphere;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.util.Map;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Created by vbokh on 24.05.2017.
  */
 public class SphereValidator {
-    public boolean objectIsSphere(Point centre,double radius) {
-        if(radius > 0 && centre!=null){
-            return true;
+    private static String REGEX = "\\s*(\\-?([0-9]||[0-9]+\\.[0-9]+)\\s+){3}([0-9]||[0-9]+\\.[0-9]+)\\s*";
+
+    public List<String> validateData(List<String> unvalidatedData) {
+        ArrayList<String> validatedData = new ArrayList<>();
+        Pattern pattern = Pattern.compile(REGEX);
+        for (String validatingLine : unvalidatedData) {
+            if (pattern.matcher(validatingLine).matches()) {
+                validatedData.add(validatingLine);
+            }
         }
-        return false;
+        return validatedData;
     }
 }
+

@@ -1,51 +1,28 @@
-2017-05-30 16:07:00.268 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:08:23.777 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:08:23.782 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:08:51.982 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:08:51.987 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:10:23.528 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:10:23.533 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:11:19.579 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:11:19.585 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:14:04.374 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:14:04.381 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:14:35.121 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:14:35.127 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:15:32.616 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:15:32.620 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:16:32.669 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:16:32.673 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:16:45.333 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:16:45.339 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:17:14.252 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:17:14.257 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:17:46.537 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:17:46.542 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:18:08.476 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:18:08.481 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:18:41.836 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:18:41.841 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:19:05.921 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:19:05.926 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:21:14.730 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:21:14.734 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:21:28.153 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:21:28.157 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:21:28.177 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:21:28.177 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:21:28.182 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:21:28.182 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:21:28.189 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605}, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345}, Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974}, Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=10.0}=SphereParameters{sphereSquare=1256.6370614359173, sphereVolume=3141.592653589793}}
-2017-05-30 16:21:28.193 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605}, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345}, Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974}, Sphere{centre=Point{x=7.0, y=8.0, z=9.0}, radius=10.0}=SphereParameters{sphereSquare=1256.6370614359173, sphereVolume=3141.592653589793}}
-2017-05-30 16:21:44.089 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:21:44.094 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:22:42.803 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:22:42.807 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:22:51.005 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:22:51.011 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:22:51.032 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:22:51.033 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:22:51.041 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Incorrect data. Expected double.
-2017-05-30 16:22:51.042 [main] ERROR com.bokhan.sphere.parser.SphereParser - Reading error. Not enough data.
-2017-05-30 16:22:51.052 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=10.0}=SphereParameters{sphereSquare=1017.8760197630929, sphereVolume=2290.221044466959}, Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=10.0}=SphereParameters{sphereSquare=1256.6370614359173, sphereVolume=3141.592653589793}, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345}, Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974}, Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605}}
-2017-05-30 16:22:51.065 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=7.0, y=8.0, z=9.0}, radius=10.0}=SphereParameters{sphereSquare=1017.8760197630929, sphereVolume=2290.221044466959}, Sphere{centre=Point{x=7.0, y=8.0, z=9.0}, radius=10.0}=SphereParameters{sphereSquare=1256.6370614359173, sphereVolume=3141.592653589793}, Sphere{centre=Point{x=7.0, y=8.0, z=9.0}, radius=10.0}=SphereParameters{sphereSquare=1256.6370614359173, sphereVolume=3141.592653589793}, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345}, Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974}, Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605}}
+2017-06-01 15:31:45.564 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage Sphere{centre=Point{x=5.0, y=7.0, z=15.0}, radius=100.0, id =17} SphereParameters{sphereSquare=125663.70614359173, sphereVolume=3141592.653589793
+ Sphere 17 is crossed by OXY coordinate plane. Ratio of volumes of sections : 2.6 Sphere 17 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 6.4 Sphere 17 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 9.26}
+
+2017-06-01 15:31:45.614 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0, id =20}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974
+ Sphere 20 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.64 Sphere 20 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.33 Sphere 20 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.64}
+, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0, id =21}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345
+ Sphere 21 is not crossed by any coordinate plane}
+, Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =18}=SphereParameters{sphereSquare=1017.8760197630929, sphereVolume=2290.221044466959
+ Sphere 18 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.05 Sphere 18 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.05 Sphere 18 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.05}
+, Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6, id =19}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605
+ Sphere 19 is not crossed by any coordinate plane}
+}
+2017-06-01 15:31:45.622 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0, id =26} is sphere. Radius = 8.0, coordinates : Point{x=3.0, y=-4.0, z=-3.0}
+2017-06-01 15:31:45.622 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6, id =27} is sphere. Radius = 4.6, coordinates : Point{x=5.1, y=7.5, z=5.5}
+2017-06-01 15:31:45.623 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0, id =28} is sphere. Radius = 2.0, coordinates : Point{x=3.0, y=4.0, z=5.0}
+2017-06-01 15:31:45.623 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =29} is sphere. Radius = 9.0, coordinates : Point{x=7.0, y=7.0, z=7.0}
+2017-06-01 15:31:45.624 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0, id =26}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974
+ Sphere 26 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.64 Sphere 26 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.33 Sphere 26 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.64}
+, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0, id =28}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345
+ Sphere 28 is not crossed by any coordinate plane}
+, Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =29}=SphereParameters{sphereSquare=1017.8760197630929, sphereVolume=2290.221044466959
+ Sphere 29 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.05 Sphere 29 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.05 Sphere 29 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.05}
+, Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6, id =27}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605
+ Sphere 27 is not crossed by any coordinate plane}
+}
+2017-06-01 15:31:45.631 [main] INFO  com.bokhan.sphere.entity.Sphere - Parameters of sphere 28 were changed. New parameters : SphereParameters{sphereSquare=5026.548245743669, sphereVolume=25132.741228718343
+ Sphere 28 is crossed by OXY coordinate plane. Ratio of volumes of sections : 1.29 Sphere 28 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 1.78 Sphere 28 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 2.6}
+

@@ -1,47 +1,34 @@
 package com.bokhan.sphere.util;
 
-import com.bokhan.sphere.entity.Point;
-import com.bokhan.sphere.entity.Sphere;
-import org.junit.Before;
+import com.bokhan.sphere.exception.NullFileException;
+import com.bokhan.sphere.reader.ReaderFromFile;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 /**
  * Created by vbokh on 25.05.2017.
  */
-@RunWith(Parameterized.class)
-public class SphereValidatorTest {
-    private final Sphere sphere;
-    private final boolean expected;
-    private static SphereValidator validator;
 
-    public SphereValidatorTest(Sphere sphere, boolean expected) {
-        this.sphere = sphere;
-        this.expected = expected;
-    }
+public class SphereValidatorTest {
+    private static SphereValidator validator;
+    private static List<String> listOfTestData;
+    private final static String FILENAME = "src/main/resources/data.txt";
 
     @BeforeClass
     public static void initValidator() {
         validator = new SphereValidator();
+        listOfTestData = new ArrayList<>();
+        listOfTestData.add("3 4 5   2");
+        listOfTestData.add("7 7 7 9");
+        listOfTestData.add("5.1 7.5 5.5 4.6");
+        listOfTestData.add("3 -4 -3 8");
     }
     @Test
-    public void objectIsSphereTest() {
-        assertEquals(expected,validator.objectIsSphere(sphere.getCentre(),sphere.getRadius()));
-    }
-
-    @Parameterized.Parameters
-    public static List<Object[]> parameters() {
-        return Arrays.asList(new Object[][]{
-                {new Sphere(new Point(3, 4, 5), 2), true},
-                {new Sphere(new Point(-2, -7, 5), -4), false},
-                {new Sphere(new Point(4, -2, 8), 0.1), true},
-                {new Sphere(new Point(5, 8, -7), -7), false}});
+    public void validateDataTest() throws NullFileException {
+        List<String> actual = validator.validateData(new ReaderFromFile().readDataFromFile(FILENAME));
+        assertEquals(listOfTestData,actual);
     }
 }
