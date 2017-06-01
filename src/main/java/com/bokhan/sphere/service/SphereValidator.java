@@ -1,4 +1,4 @@
-package com.bokhan.sphere.services;
+package com.bokhan.sphere.service;
 
 import java.util.ArrayList;
 import java.util.List;

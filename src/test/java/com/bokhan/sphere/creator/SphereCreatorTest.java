@@ -7,7 +7,7 @@ import com.bokhan.sphere.exception.MissingDataException;
 import com.bokhan.sphere.exception.NullFileException;
 import com.bokhan.sphere.parser.SphereParser;
 import com.bokhan.sphere.reader.ReaderFromFile;
-import com.bokhan.sphere.services.SphereValidator;
+import com.bokhan.sphere.service.SphereValidator;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;
