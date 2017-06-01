@@ -3,6 +3,10 @@ package com.bokhan.sphere.entity;
 import com.bokhan.sphere.observer.IObserver;
 import com.bokhan.sphere.observer.SphereEvent;
 import com.bokhan.sphere.service.SphereParametersCalculator;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +15,7 @@ import java.util.List;
  * Created by vbokh on 25.05.2017.
  */
 public class SphereParameters implements IObserver{
+    private final static Logger LOGGER = LogManager.getLogger();
     private double sphereSquare;
     private double sphereVolume;
     private String sphereVolumesRatio;
@@ -30,7 +35,8 @@ public class SphereParameters implements IObserver{
     @Override
     public void handleEvent(SphereEvent event) {
         Sphere updatingSphere = event.getSource();
-        update(updatingSphere);
+        calculateSphereParameters(updatingSphere);
+        LOGGER.log(Level.INFO,"Parameters of sphere " + updatingSphere.getId() + " were changed in storage. New parameters : " + this);
     }
 
     @Override
@@ -40,12 +46,6 @@ public class SphereParameters implements IObserver{
 
     public void addObservable(Sphere sphere) {
         observableSpheres.add(sphere);
-    }
-
-    private void update(Sphere sphere) {
-        sphereSquare = SphereParametersCalculator.calculateSquare(sphere);
-        sphereVolume = SphereParametersCalculator.calculateVolume(sphere);
-        sphereVolumesRatio = SphereParametersCalculator.calculateSphereVolumesRatio(sphere);
     }
 
     public double getSphereSquare() {

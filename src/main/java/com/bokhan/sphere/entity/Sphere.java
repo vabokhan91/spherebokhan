@@ -11,7 +11,6 @@ import org.apache.logging.log4j.Logger;
  * Created by vbokh on 24.05.2017.
  */
 public class Sphere {
-    private final static Logger LOGGER = LogManager.getLogger();
     private Integer id;
     private Point centre;
     private double radius;
@@ -38,13 +37,11 @@ public class Sphere {
     public void setCentre(Point centre) {
         this.centre = centre;
         notifyObservers();
-        LOGGER.log(Level.INFO, "Parameters of sphere " + id + " were changed. New parameters : " + this.parameters);
     }
 
     public void setRadius(double radius) {
         this.radius = radius;
         notifyObservers();
-        LOGGER.log(Level.INFO, "Parameters of sphere " + id + " were changed. New parameters : " + this.parameters);
     }
 
     public void addObserver(SphereParameters parameters) {
