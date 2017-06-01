@@ -1,0 +1,48 @@
+2017-06-01 16:05:59.673 [main] INFO  com.bokhan.sphere.entity.Sphere - Parameters of sphere 26 were changed. New parameters : SphereParameters{sphereSquare=5026.548245743669, sphereVolume=25132.741228718343
+ Sphere 26 is crossed by OXY coordinate plane. Ratio of volumes of sections : 2.6 Sphere 26 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 1.78 Sphere 26 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 2.6}
+
+2017-06-01 16:08:49.425 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=3.0, y=5.0, z=6.0}, radius=2.0, id =1} is sphere. Radius = 2.0, coordinates : Point{x=3.0, y=5.0, z=6.0}
+2017-06-01 16:08:49.429 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =2} is sphere. Radius = 9.0, coordinates : Point{x=7.0, y=7.0, z=7.0}
+2017-06-01 16:08:49.450 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=0.0, y=0.0, z=0.0}, radius=-12.0, id =3} is not a sphere. Radius = -12.0, coordinates : Point{x=0.0, y=0.0, z=0.0}
+2017-06-01 16:08:49.452 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=null, radius=3.0, id =4} is not a sphere. Radius = 3.0, coordinates : null
+2017-06-01 16:08:49.905 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0, id =13} is sphere. Radius = 8.0, coordinates : Point{x=3.0, y=-4.0, z=-3.0}
+2017-06-01 16:08:49.906 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6, id =14} is sphere. Radius = 4.6, coordinates : Point{x=5.1, y=7.5, z=5.5}
+2017-06-01 16:08:49.907 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0, id =15} is sphere. Radius = 2.0, coordinates : Point{x=3.0, y=4.0, z=5.0}
+2017-06-01 16:08:49.907 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =16} is sphere. Radius = 9.0, coordinates : Point{x=7.0, y=7.0, z=7.0}
+2017-06-01 16:08:49.911 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0, id =13}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974
+ Sphere 13 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.64 Sphere 13 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.33 Sphere 13 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.64}
+, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0, id =15}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345
+ Sphere 15 is not crossed by any coordinate plane}
+, Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =16}=SphereParameters{sphereSquare=1017.8760197630929, sphereVolume=2290.221044466959
+ Sphere 16 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.05 Sphere 16 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.05 Sphere 16 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.05}
+, Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6, id =14}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605
+ Sphere 14 is not crossed by any coordinate plane}
+}
+2017-06-01 16:08:49.922 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage Sphere{centre=Point{x=5.0, y=7.0, z=15.0}, radius=100.0, id =17} SphereParameters{sphereSquare=125663.70614359173, sphereVolume=3141592.653589793
+ Sphere 17 is crossed by OXY coordinate plane. Ratio of volumes of sections : 2.6 Sphere 17 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 6.4 Sphere 17 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 9.26}
+
+2017-06-01 16:08:49.927 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0, id =20}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974
+ Sphere 20 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.64 Sphere 20 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.33 Sphere 20 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.64}
+, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0, id =21}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345
+ Sphere 21 is not crossed by any coordinate plane}
+, Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =18}=SphereParameters{sphereSquare=1017.8760197630929, sphereVolume=2290.221044466959
+ Sphere 18 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.05 Sphere 18 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.05 Sphere 18 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.05}
+, Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6, id =19}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605
+ Sphere 19 is not crossed by any coordinate plane}
+}
+2017-06-01 16:08:49.945 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0, id =26} is sphere. Radius = 8.0, coordinates : Point{x=3.0, y=-4.0, z=-3.0}
+2017-06-01 16:08:49.948 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6, id =27} is sphere. Radius = 4.6, coordinates : Point{x=5.1, y=7.5, z=5.5}
+2017-06-01 16:08:49.949 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0, id =28} is sphere. Radius = 2.0, coordinates : Point{x=3.0, y=4.0, z=5.0}
+2017-06-01 16:08:49.949 [main] INFO  com.bokhan.sphere.creator.SphereCreator - Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =29} is sphere. Radius = 9.0, coordinates : Point{x=7.0, y=7.0, z=7.0}
+2017-06-01 16:08:49.951 [main] INFO  com.bokhan.sphere.storage.SphereStorage - New data in storage {Sphere{centre=Point{x=3.0, y=-4.0, z=-3.0}, radius=8.0, id =26}=SphereParameters{sphereSquare=804.247719318987, sphereVolume=1608.495438637974
+ Sphere 26 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.64 Sphere 26 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.33 Sphere 26 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.64}
+, Sphere{centre=Point{x=3.0, y=4.0, z=5.0}, radius=2.0, id =28}=SphereParameters{sphereSquare=50.26548245743669, sphereVolume=25.132741228718345
+ Sphere 28 is not crossed by any coordinate plane}
+, Sphere{centre=Point{x=7.0, y=7.0, z=7.0}, radius=9.0, id =29}=SphereParameters{sphereSquare=1017.8760197630929, sphereVolume=2290.221044466959
+ Sphere 29 is crossed by OXY coordinate plane. Ratio of volumes of sections : 0.05 Sphere 29 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 0.05 Sphere 29 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 0.05}
+, Sphere{centre=Point{x=5.1, y=7.5, z=5.5}, radius=4.6, id =27}=SphereParameters{sphereSquare=265.90440219984004, sphereVolume=305.79006252981605
+ Sphere 27 is not crossed by any coordinate plane}
+}
+2017-06-01 16:08:49.953 [main] INFO  com.bokhan.sphere.entity.Sphere - Parameters of sphere 26 were changed. New parameters : SphereParameters{sphereSquare=5026.548245743669, sphereVolume=25132.741228718343
+ Sphere 26 is crossed by OXY coordinate plane. Ratio of volumes of sections : 2.6 Sphere 26 is crossed by OXZ coordinate plane. Ratio of volumes of sections : 1.78 Sphere 26 is crossed by OYZ coordinate plane. Ratio of volumes of sections : 2.6}
+
