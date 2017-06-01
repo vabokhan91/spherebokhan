@@ -19,7 +19,6 @@ import com.bokhan.sphere.service.SphereValidatorTest;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-
 import java.util.List;
 import java.util.Map;
 
