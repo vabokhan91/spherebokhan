@@ -8,21 +8,19 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**
  * Created by vbokh on 25.05.2017.
  */
-public class SphereParameters implements IObserver{
+public class SphereParameters implements IObserver {
     private final static Logger LOGGER = LogManager.getLogger();
     private double sphereSquare;
     private double sphereVolume;
     private String sphereVolumesRatio;
-    private List<Sphere> observableSpheres;
+    private ArrayList<Sphere> observableSpheres = new ArrayList<>();
 
     public SphereParameters(Sphere sphere) {
-        observableSpheres = new ArrayList<>();
         calculateSphereParameters(sphere);
     }
 
@@ -36,7 +34,7 @@ public class SphereParameters implements IObserver{
     public void handleEvent(SphereEvent event) {
         Sphere updatingSphere = event.getSource();
         calculateSphereParameters(updatingSphere);
-        LOGGER.log(Level.INFO,"Parameters of sphere " + updatingSphere.getId() + " were changed in storage. New parameters : " + this);
+        LOGGER.log(Level.INFO, "Parameters of sphere " + updatingSphere.getId() + " were changed.  New parameters : " + this);
     }
 
     @Override
@@ -64,7 +62,7 @@ public class SphereParameters implements IObserver{
     public String toString() {
         return "SphereParameters{" +
                 "sphereSquare=" + sphereSquare +
-                ", sphereVolume=" + sphereVolume + "\n" +sphereVolumesRatio +
+                ", sphereVolume=" + sphereVolume + "\n" + sphereVolumesRatio +
                 '}' + "\n";
     }
 

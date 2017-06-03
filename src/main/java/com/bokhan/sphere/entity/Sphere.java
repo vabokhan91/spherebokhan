@@ -1,11 +1,10 @@
 package com.bokhan.sphere.entity;
 
+import com.bokhan.sphere.exception.IncorrectDataException;
 import com.bokhan.sphere.generator.IdGenerator;
 import com.bokhan.sphere.observer.IObserver;
 import com.bokhan.sphere.observer.SphereEvent;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 /**
  * Created by vbokh on 24.05.2017.
@@ -39,7 +38,10 @@ public class Sphere {
         notifyObservers();
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(double radius) throws IncorrectDataException {
+        if (radius <= 0) {
+            throw new IncorrectDataException(" Trying to set wrong radius value " + radius + ". Radius can not be negative or 0");
+        }
         this.radius = radius;
         notifyObservers();
     }
@@ -68,12 +70,7 @@ public class Sphere {
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        result = centre != null ? centre.hashCode() : 0;
-        temp = Double.doubleToLongBits(radius);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        return result;
+        return id != null ? id.hashCode() : 0;
     }
 
     @Override

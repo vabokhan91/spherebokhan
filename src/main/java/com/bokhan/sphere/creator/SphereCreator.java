@@ -4,13 +4,12 @@ import com.bokhan.sphere.entity.Point;
 import com.bokhan.sphere.entity.Sphere;
 import com.bokhan.sphere.entity.SphereParameters;
 import com.bokhan.sphere.exception.MissingDataException;
-import com.bokhan.sphere.storage.SphereStorage;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.util.HashMap;
 import java.util.Map;
-
 
 /**
  * Created by vbokh on 24.05.2017.
@@ -18,7 +17,7 @@ import java.util.Map;
 public class SphereCreator {
     private final static Logger LOGGER = LogManager.getLogger();
 
-    public Map<Sphere, SphereParameters> createSpheresAndParameters(Map<Point, Double> parsedData) throws MissingDataException {
+    public Map<Sphere, SphereParameters> createSphereAndParameters(Map<Point, Double> parsedData) throws MissingDataException {
         if (parsedData == null || parsedData.size() == 0) {
             throw new MissingDataException("No data was received for creating spheres");
         }
@@ -31,16 +30,15 @@ public class SphereCreator {
                 sphereAndParameters.put(sphere, parameters);
             }
         }
-        SphereStorage.getInstance().updateStorage(sphereAndParameters);
         return sphereAndParameters;
     }
 
     public boolean isSphere(Sphere sphere) {
         if (sphere.getRadius() > 0 && sphere.getCentre() != null) {
-            LOGGER.log(Level.INFO, sphere + " is sphere. Radius = " + sphere.getRadius()+", coordinates : " + sphere.getCentre());
+            LOGGER.log(Level.INFO, sphere + " is sphere. Radius = " + sphere.getRadius() + ", coordinates : " + sphere.getCentre());
             return true;
         }
-        LOGGER.log(Level.INFO, sphere + " is not a sphere. Radius = " + sphere.getRadius()+", coordinates : " + sphere.getCentre());
+        LOGGER.log(Level.INFO, sphere + " is not a sphere. Radius = " + sphere.getRadius() + ", coordinates : " + sphere.getCentre());
         return false;
     }
 }

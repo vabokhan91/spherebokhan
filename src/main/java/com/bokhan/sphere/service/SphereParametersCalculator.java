@@ -16,12 +16,14 @@ public class SphereParametersCalculator {
     public static double calculateSquare(Sphere sphere) {
         double radius = sphere.getRadius();
         double square = 4 * P * Math.pow(radius, 2);
+        square = Math.round(square * 100) / 100d;
         return square;
     }
 
     public static double calculateVolume(Sphere sphere) {
         double radius = sphere.getRadius();
         double sphereVolume = 4 / 3 * P * Math.pow(radius, 3);
+        sphereVolume = Math.round(sphereVolume * 100) / 100d;
         return sphereVolume;
     }
 
@@ -91,7 +93,7 @@ public class SphereParametersCalculator {
     }
 
     private static boolean isSphereCrossedByOXY(Sphere sphere) {
-       return sphere.getRadius() > Math.abs(sphere.getCentre().getZ());
+        return sphere.getRadius() > Math.abs(sphere.getCentre().getZ());
     }
 
     private static boolean isSphereCrossedByOXZ(Sphere sphere) {
@@ -100,6 +102,6 @@ public class SphereParametersCalculator {
     }
 
     private static boolean isSphereCrossedByOYZ(Sphere sphere) {
-      return sphere.getRadius() > Math.abs(sphere.getCentre().getX());
+        return sphere.getRadius() > Math.abs(sphere.getCentre().getX());
     }
 }
